@@ -1,5 +1,6 @@
 # moa-classification
 [Download data](https://www.kaggle.com/c/lish-moa/data)
+[NBViewer](https://nbviewer.jupyter.org/github/Mainakdeb/moa-classification/blob/master/moa-classification.ipynb)
 
 ## Checklist/To-do
 * Check performance on scaled and unscaled data
