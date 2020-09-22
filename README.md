@@ -18,3 +18,4 @@
 * use only the top features [reference](https://www.kaggle.com/simakov/keras-multilabel-neural-network-v1-2)
 * Bunch of novel [ideas](https://www.kaggle.com/c/lish-moa/discussion/183377) 
 * thread on [model blends](https://www.kaggle.com/c/lish-moa/discussion/185650)
+* try out ensemble nets
