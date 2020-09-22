@@ -3,6 +3,10 @@
 
 [NBViewer](https://nbviewer.jupyter.org/github/Mainakdeb/moa-classification/blob/master/moa-classification.ipynb)
 
+## Notes
+* This is not a multilabel classification problem. This is a multilabel probability prediction problem
+
+
 ## Checklist/To-do
 * ~Check performance on scaled and unscaled data~ -> used `sklearn.preprocessing.Normalizer()`
 * ~try `sklearn.compose.ColumnTransformer`~
@@ -12,3 +16,5 @@
 * ~use K-Fold Cross validation~  -> works 
 * ~exploit the fact that for all features where `features.cp_type ==  "ctl_vehicle"` the corresponding labels are all zeros [reference](https://www.kaggle.com/nicohrubec/pytorch-multilabel-neural-network), check the last cell~ -> new best score
 * use only the top features [reference](https://www.kaggle.com/simakov/keras-multilabel-neural-network-v1-2)
+* Bunch of novel [ideas](https://www.kaggle.com/c/lish-moa/discussion/183377) 
+* thread on [model blends](https://www.kaggle.com/c/lish-moa/discussion/185650)
