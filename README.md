@@ -18,5 +18,6 @@
 * use only the top features [reference](https://www.kaggle.com/simakov/keras-multilabel-neural-network-v1-2)
 * Bunch of novel [ideas](https://www.kaggle.com/c/lish-moa/discussion/183377): 
   * Try out [Stratified K fold](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html) 
+  * Look at the `target_counts` used [here](https://www.kaggle.com/gogo827jz/fork-of-keras-multilabel-neural-network) for stratified k fold 
 * thread on [model blends](https://www.kaggle.com/c/lish-moa/discussion/185650)
 * try out ensemble nets (split based on data type)
