@@ -16,6 +16,7 @@
 * ~use K-Fold Cross validation~  -> works 
 * ~exploit the fact that for all features where `features.cp_type ==  "ctl_vehicle"` the corresponding labels are all zeros [reference](https://www.kaggle.com/nicohrubec/pytorch-multilabel-neural-network), check the last cell~ -> new best score
 * use only the top features [reference](https://www.kaggle.com/simakov/keras-multilabel-neural-network-v1-2)
-* Bunch of novel [ideas](https://www.kaggle.com/c/lish-moa/discussion/183377) 
+* Bunch of novel [ideas](https://www.kaggle.com/c/lish-moa/discussion/183377): 
+  * Try out [Stratified K fold](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html) 
 * thread on [model blends](https://www.kaggle.com/c/lish-moa/discussion/185650)
 * try out ensemble nets (split based on data type)
