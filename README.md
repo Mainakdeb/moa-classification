@@ -4,8 +4,9 @@
 [NBViewer](https://nbviewer.jupyter.org/github/Mainakdeb/moa-classification/blob/master/moa-classification.ipynb)
 
 ## Notes
-* This is not a multilabel classification problem. This is a multilabel probability prediction problem
+* Metric is log loss (aka cross entropy). This is beneficial as there will be no gap between the loss and competition metric.
 
+* On the other hand, this metric has been criticized for being unintuitive and a bad fit for highly unbalanced problems such as this.
 
 ## Checklist/To-do
 * ~Check performance on scaled and unscaled data~ -> used `sklearn.preprocessing.Normalizer()`
