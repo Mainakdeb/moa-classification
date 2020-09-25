@@ -27,5 +27,5 @@
   * Look at the `target_counts` used [here](https://www.kaggle.com/gogo827jz/fork-of-keras-multilabel-neural-network) for stratified k fold 
 * thread on [model blends](https://www.kaggle.com/c/lish-moa/discussion/185650)
 * try out ensemble nets (split based on data type)
-* need to balance the multilabel targets
-* Use [label powersets](http://scikit.ml/api/skmultilearn.problem_transform.lp.html) - Transform the multi-label problem to a multi-class problem
+* need to balance the multilabel targets --mainak
+* Use [label powersets](http://scikit.ml/api/skmultilearn.problem_transform.lp.html) - Transform the multi-label problem to a multi-class problem --mayukh
