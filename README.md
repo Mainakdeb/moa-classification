@@ -29,3 +29,4 @@
 * try out ensemble nets (split based on data type)
 * need to balance the multilabel targets --mainak
 * Use [label powersets](http://scikit.ml/api/skmultilearn.problem_transform.lp.html) - Transform the multi-label problem to a multi-class problem --mayukh
+* try training on only non zero labels, and hardcode the rest
