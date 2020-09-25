@@ -3,10 +3,15 @@
 
 [NBViewer](https://nbviewer.jupyter.org/github/Mainakdeb/moa-classification/blob/master/moa-classification.ipynb)
 
-## Notes
-* Metric is log loss (aka cross entropy). This is beneficial as there will be no gap between the loss and competition metric.
-
-* On the other hand, this metric has been criticized for being unintuitive and a bad fit for highly unbalanced problems such as this.
+## Notes [reference](https://www.kaggle.com/c/lish-moa/discussion/184005)
+* Metric is log loss (aka cross entropy). This is beneficial as there will be no gap between the loss and competition metric. On the other hand, this metric has been criticized for being unintuitive and a bad fit for highly unbalanced problems such as this.
+* Alternative loss functions:
+  * AUC
+  * Hamming Loss
+  * Jaccard Index
+  * Micro/Macro-averaging
+  * Exact Match Ratio
+  * Top-k Error
 
 ## Checklist/To-do
 * ~Check performance on scaled and unscaled data~ -> used `sklearn.preprocessing.Normalizer()`
@@ -22,3 +27,5 @@
   * Look at the `target_counts` used [here](https://www.kaggle.com/gogo827jz/fork-of-keras-multilabel-neural-network) for stratified k fold 
 * thread on [model blends](https://www.kaggle.com/c/lish-moa/discussion/185650)
 * try out ensemble nets (split based on data type)
+* need to balance the multilabel targets
+* Use [label powersets](http://scikit.ml/api/skmultilearn.problem_transform.lp.html) - Transform the multi-label problem to a multi-class problem
