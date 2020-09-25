@@ -26,7 +26,7 @@
   
 * thread on [model blends](https://www.kaggle.com/c/lish-moa/discussion/185650)
 * try out ensemble nets (split based on data type)
-* need to balance the multilabel targets --mainak
+* need to balance the multilabel targets --mainak -> model fails to generalise becuse class distribution may be different in test set
 * ~Use [label powersets](http://scikit.ml/api/skmultilearn.problem_transform.lp.html) - Transform the multi-label problem to a multi-class problem --mayukh~
 * try training on only non zero labels, and hardcode the rest
 * move to [optuna](https://optuna.org/). [This video](https://www.youtube.com/watch?v=4MK_OJJ82YI) might help.  
