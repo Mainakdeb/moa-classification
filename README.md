@@ -33,3 +33,4 @@
 * **Interesting properties**:
     * For target columns `atp-sensitive_potassium_channel_antagonist` and `erbb2_inhibitor` all rows are `0` where `cp_dose == 'D2'`
     * For target columns `atp-sensitive_potassium_channel_antagonist` and `erbb2_inhibitor` all rows are `0` also where `cp_time != 48`
+* [only notebook](https://www.kaggle.com/utkukubilay/pytorch-moa-0-01867) better than our 0.01872
