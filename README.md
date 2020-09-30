@@ -30,6 +30,10 @@
 * ~Use [label powersets](http://scikit.ml/api/skmultilearn.problem_transform.lp.html) - Transform the multi-label problem to a multi-class problem --mayukh~
 * ~try training on only non zero labels, and hardcode the rest~ kind of works, but hard to say yes because of a possible bottleneck on the model
 * ~move to [optuna](https://optuna.org/)~ -> optuna in the works 
+* Another possibility:
+    * Where we train 2 models on 2 halves of the target tensor of size 206, and then stack them horizontally for inference 
+
+
 * **Interesting properties**:
     * For target columns `atp-sensitive_potassium_channel_antagonist` and `erbb2_inhibitor` all rows are `0` where `cp_dose == 'D2'`
     * For target columns `atp-sensitive_potassium_channel_antagonist` and `erbb2_inhibitor` all rows are `0` also where `cp_time != 48`
