@@ -25,7 +25,7 @@
   * ~Try using MultiLabelStratifiedKFold from iterstat~ [video](https://youtu.be/VRVit0-0AXE?t=1704), time = `28:24` -> using now  
   
 * thread on [model blends](https://www.kaggle.com/c/lish-moa/discussion/185650)
-* try out ensemble nets (split based on data type)
+* **try out ensemble nets** [Great video](https://www.youtube.com/watch?v=TuIgtitqJho&t=1779s)
 * need to balance the multilabel targets --mainak -> model fails to generalise becuse class distribution may be different in test set
 * ~Use [label powersets](http://scikit.ml/api/skmultilearn.problem_transform.lp.html) - Transform the multi-label problem to a multi-class problem --mayukh~
 * ~try training on only non zero labels, and hardcode the rest~ kind of works, but hard to say yes because of a possible bottleneck on the model
