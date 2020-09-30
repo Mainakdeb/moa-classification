@@ -13,6 +13,9 @@
   * Exact Match Ratio
   * Top-k Error
 
+## Needs urgent fix
+* Inconsistent validation losses on the same validation set with `model.eval()` possibly because we load it with `shuffle = True`
+
 ## Checklist/To-do
 * ~Check performance on scaled and unscaled data~ -> used `sklearn.preprocessing.Normalizer()`
 * ~try `sklearn.compose.ColumnTransformer`~
