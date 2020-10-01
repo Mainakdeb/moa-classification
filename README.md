@@ -32,7 +32,8 @@
 * need to balance the multilabel targets --mainak -> model fails to generalise becuse class distribution may be different in test set
 * ~Use [label powersets](http://scikit.ml/api/skmultilearn.problem_transform.lp.html) - Transform the multi-label problem to a multi-class problem --mayukh~
 * ~try training on only non zero labels, and hardcode the rest~ kind of works, but hard to say yes because of a possible bottleneck on the model
-* ~move to [optuna](https://optuna.org/)~ -> optuna in the works 
+* ~move to [optuna](https://optuna.org/)~ -> optuna implemented
+* pre-set training folds
 * Another possibility:
     * Where we train 2 models on 2 halves of the target tensor of size 206, and then stack them horizontally for inference 
 
