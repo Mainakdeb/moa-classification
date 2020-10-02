@@ -12,6 +12,8 @@
   * Micro/Macro-averaging
   * Exact Match Ratio
   * Top-k Error
+  
+ * If we want to blend non nn models, we have to scale all outputs for a consistent loss metric, so we could replace `nn.BCEWithLogitsLoss()` with `nn.BCELoss()` and add `torch.sigmoid` layer in the end to map everything between [`0,1]`. And for the non nn model, we can use `np.interp` for a nice mapping 
 
 ## Needs urgent fix
 * Inconsistent validation losses on the same validation set with `model.eval()` possibly because we load it with `shuffle = True`
