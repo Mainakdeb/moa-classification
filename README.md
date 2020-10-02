@@ -36,7 +36,7 @@
 * pre-set training folds
 * Another possibility:
     * Where we train 2 models on 2 halves of the target tensor of size 206, and then stack them horizontally for inference 
-
+* Ecode cp_time into 3 seperate binary columns -> under way
 
 * **Interesting properties**:
     * For target columns `atp-sensitive_potassium_channel_antagonist` and `erbb2_inhibitor` all rows are `0` where `cp_dose == 'D2'`
