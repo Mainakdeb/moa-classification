@@ -3,6 +3,13 @@
 
 [NBViewer](https://nbviewer.jupyter.org/github/Mainakdeb/moa-classification/blob/master/moa-classification.ipynb)
 
+## Non nn models that we should try using 
+> (enter their holdout set log losses here )
+* KernelRidge
+* LogisticRegression on each column
+* LinearRegression
+* LinearSVR
+
 ## Notes [reference](https://www.kaggle.com/c/lish-moa/discussion/184005)
 * Metric is log loss (aka cross entropy). This is beneficial as there will be no gap between the loss and competition metric. On the other hand, this metric has been criticized for being unintuitive and a bad fit for highly unbalanced problems such as this.
 * Alternative loss functions:
