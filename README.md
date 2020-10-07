@@ -49,7 +49,7 @@
     * Where we train 2 models on 2 halves of the target tensor of size 206, and then stack them horizontally for inference 
 * Encode cp_time into 3 seperate binary columns -> done, yet to submit
 * Scaling everything makes things worse
-* Finish watching Abishek Thakur's video 
+* Finish watching Abishek Thakur's video -> Done
 
 * **Interesting properties**:
     * For target columns `atp-sensitive_potassium_channel_antagonist` and `erbb2_inhibitor` all rows are `0` where `cp_dose == 'D2'`
