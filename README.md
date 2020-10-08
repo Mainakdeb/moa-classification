@@ -22,7 +22,10 @@
   
  * If we want to blend non nn models, we have to scale all outputs for a consistent loss metric, so we could replace `nn.BCEWithLogitsLoss()` with `nn.BCELoss()` and add `torch.sigmoid` layer in the end to map everything between [`0,1]`. And for the non nn model, we can use `np.interp` for a nice mapping
  * Use the log loss as given by yirun zhang with the 1e-15 clipping
- * Try multiplying the logits with a learnable scalar as `x =  x * torch.ones_like(x)*learnable_scalar`
+ * ~~Try multiplying the logits with a learnable scalar as `x =  x * torch.ones_like(x)*learnable_scalar`~~ Worse LB, better CV, which means overfitting to some extent 
+ * Try using label smoothing
+     * [Discussion on kaggle](https://www.kaggle.com/c/lish-moa/discussion/185593)
+     * Quote from the discussion: *"The **labels are not 100% accurate** based on the information from the competition host. The information is in one of his posts."*
 
 ## Needs urgent fix
 * Inconsistent validation losses on the same validation set with `model.eval()` possibly because we load it with `shuffle = True`
