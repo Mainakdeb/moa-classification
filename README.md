@@ -6,7 +6,7 @@
 ## Non nn models that we should try using 
 > (enter their holdout set log losses here )
 * KernelRidge
-* LogisticRegression on each column
+* ~~LogisticRegression on each column~~ Similar thing made with XGBoost
 * LinearRegression
 * LinearSVR
 
@@ -26,9 +26,10 @@
  * Try using label smoothing
      * [Discussion on kaggle](https://www.kaggle.com/c/lish-moa/discussion/185593)
      * Quote from the discussion: *"The **labels are not 100% accurate** based on the information from the competition host. The information is in one of his posts."*
+     * [Possible implementation](https://www.kaggle.com/c/siim-isic-melanoma-classification/discussion/166833)
 
 ## Needs urgent fix
-* Inconsistent validation losses on the same validation set with `model.eval()` possibly because we load it with `shuffle = True`
+* ~~Inconsistent validation losses on the same validation set with `model.eval()` possibly because we load it with `shuffle = True`~~ Fixed 
 
 ## Checklist/To-do
 * ~Check performance on scaled and unscaled data~ -> used `sklearn.preprocessing.Normalizer()`
