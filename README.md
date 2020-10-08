@@ -51,7 +51,7 @@
 * pre-set training folds
 * Another possibility:
     * Where we train 2 models on 2 halves of the target tensor of size 206, and then stack them horizontally for inference 
-* Encode cp_time into 3 seperate binary columns -> done, yet to submit
+* Encode cp_time into 3 seperate binary columns -> Done
 * Scaling everything makes things worse
 * Finish watching Abishek Thakur's video -> Done
 
