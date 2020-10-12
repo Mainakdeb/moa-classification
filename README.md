@@ -28,6 +28,7 @@
      * Quote from the discussion: *"The **labels are not 100% accurate** based on the information from the competition host. The information is in one of his posts."*
      * [Possible implementation](https://www.kaggle.com/c/siim-isic-melanoma-classification/discussion/166833)
  * Try to use residual layers if possible. [Discussion on kaggle](https://www.kaggle.com/c/lish-moa/discussion/189595)
+ * Select the best models by thresholding weights on optuna and on inference, something like `weights[weights < threshold] = 0.`
 
 ## Needs urgent fix
 * ~~Inconsistent validation losses on the same validation set with `model.eval()` possibly because we load it with `shuffle = True`~~ Fixed 
